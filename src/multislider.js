@@ -10,12 +10,15 @@ $(document).ready(function(){
 		const v_max = parseFloat(input_max[0].max);
 		const range = v_max - v_min;
 
+		const firefox = navigator.userAgent.toLowerCase().includes('firefox');
+
 		// slider range indicator (betweener)
 		let rails_width = ms.find('.multislider-rails').width() / 100;
 		const padding = 12;
 		const between = ms.find('.multislider-range');
 
 		function update_betweener(){
+			if(firefox){ return; }
 			const min = parseFloat(rail_min.val());
 			const max = parseFloat(rail_max.val());
 			const l = (min * rails_width) - padding;
@@ -94,5 +97,11 @@ $(document).ready(function(){
 			rails_width = ms.find('.multislider-rails').width() / 100;
 			update_betweener();
 		});
+
+		//some firefox flaws
+		if(firefox){
+			between.hide();
+			ms.find('.multislider-rail').css('top', '-8px');
+		}2
 	});
 });

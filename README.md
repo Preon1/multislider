@@ -10,6 +10,11 @@
 - Data should be gathered from input[type="number']
 - Supports unlimited instances
 - No initiation or coding needed
+- Utilize native html inputs
+
+### Drawbacks
+- Firefox limited support (still fully usable)
+- Requeres JQuery, but it can be fixed
 
 ## Demo
 Download the package and open index.html
@@ -18,7 +23,7 @@ Download the package and open index.html
 
 ## How to
 1. Add multislider.min.css
-2. Add multislider.min.js after Jquery
+2. Add multislider.min.js after JQuery
 3. Copy html on your page:
 ```
 <div class="multislider">
