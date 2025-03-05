@@ -1,6 +1,6 @@
 # HTML ranges slider (css+js)
 
-## Features:
+### Features:
 - Lightweight
 - Range limiters in all inputs
 - Knobs can push each other and don't overlap
@@ -12,7 +12,7 @@
 - No initiation or coding needed
 
 ## Demo
-Download the pachage and open index.html
+Download the package and open index.html
 
 <img width="520" alt="multislider" src="https://github.com/user-attachments/assets/fd3d745b-651a-471a-a92f-1d4be158afda" />
 
