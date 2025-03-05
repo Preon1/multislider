@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="multislider.min.css">
+		<title>Multislider</title>
+		<style>
+			.multislider{
+				padding: 50px 32px;
+				margin: 0 auto;
+				width: 100%;
+				min-width: 200px;
+				max-width: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="multislider">
+			<div class="multislider-inputs">
+				<div><input type="number" name="filter-price-min" class="multislider-input min" min="12824.32" max="152735.76" value="30000" step="any"></div>
+				<div><input type="number" name="filter-price-max" class="multislider-input max" min="12824.32" max="152735.76" value="70000" step="any"></div>
+			</div>
+			<div class="multislider-rails-container">
+				<div class="multislider-rails">
+					<div class="multislider-range"></div>
+					<input type="range" min="0" max="100" value="0" class="multislider-rail min">
+					<input type="range" min="0" max="100" value="100" class="multislider-rail max">
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+		<script src="multislider.min.js"></script>
+	</body>
+</html>
