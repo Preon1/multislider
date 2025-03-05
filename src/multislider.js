@@ -92,6 +92,7 @@ $(document).ready(function(){
 
 		$(window).resize(function(){
 			rails_width = ms.find('.multislider-rails').width() / 100;
+			update_betweener();
 		});
 	});
 });
