@@ -7,9 +7,7 @@
 - Visual representation of selected range
 - Autoestablishes on page load
 - Resizable
-- Data should be gathered from input[type="number']
 - Supports unlimited instances
-- No initiation or coding needed
 - Utilize native html inputs
 
 ### Drawbacks
@@ -40,3 +38,21 @@ Download the package and open index.html
 	</div>
 </div>
 ```
+4. Initialize each multislider. Optionally bind resize.
+```
+let multislider = [];
+$(document).ready(function(){
+	$('.multislider').each(function(key){
+		multislider[key] = new Multislider($(this));
+		$(window).on('resize', function(){
+			multislider[key].onResize();
+		});
+	});
+});
+```
+6. Data should be gathered from input[type="number']
+
+## Usefull methods
+1. multislider.init() - positions sliders according number inputs. Use after modification on input values via js.
+2. multislider.updateBetweener() - positions the bar between slider knobs to match current set range. Use after manipulating slider knobs via js.
+3. multislider.onResize() - corrects variables used by the bar between slider knobs to function properly after changing multislider container width.
