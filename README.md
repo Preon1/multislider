@@ -53,6 +53,6 @@ $(document).ready(function(){
 6. Data should be gathered from input[type="number']
 
 ## Usefull methods
-1. multislider.init() - positions sliders according number inputs. Use after modification on input values via js.
-2. multislider.updateBetweener() - positions the bar between slider knobs to match current set range. Use after manipulating slider knobs via js.
-3. multislider.onResize() - corrects variables used by the bar between slider knobs to function properly after changing multislider container width.
+1. `multislider.init()` - positions sliders according number inputs. Use after modification on input values via js.
+2. `multislider.updateBetweener()` - positions the bar between slider knobs to match current set range. Use after manipulating slider knobs via js.
+3. `multislider.onResize()` - corrects variables used by the bar between slider knobs to function properly after changing multislider container width.
