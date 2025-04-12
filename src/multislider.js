@@ -93,6 +93,8 @@ class Multislider {
 		if(Multislider.firefox){
 			this.between.hide();
 			this.ms.find('.multislider-rail').css('top', '-8px');
+		}else{
+			this.onResize();
 		}
 	}
 
